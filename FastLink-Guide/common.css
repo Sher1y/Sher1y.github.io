@@ -1,0 +1,67 @@
+body {
+    background-image: linear-gradient(200deg, #5ee7df, #b490ca);
+    height: 100vh;
+}
+.card {
+    margin: 100px auto;
+    width: 300px;
+    height: 450px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #fff;
+    box-shadow: 1px 1px 20px rgba(0,0,0,.1);
+    transform-style: preserve-3d;
+    overflow: hidden;
+}
+.content {
+    position: relative;
+    height: 90px;
+    margin: 0 20px;
+    text-align: center;
+    z-index: 10;
+}
+.content:nth-child(-n+4)  {
+    border-bottom: 1px solid #a09a9a;
+}
+.content:hover {
+    transition: 0.3s;
+    border: none;
+}
+.content a {
+    display: block;
+    position:absolute;
+    top:30px;
+    left: 30px;
+    width: 200px;
+    height: 60px;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 60px;
+}
+.content:nth-child(n+2):hover a{
+    position:absolute;
+    top: -9px;
+    left: 0;
+    width: 260px;
+    height: 98px;
+    line-height: 90px;
+    background: #5ee7df;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 22;
+}
+.content:nth-child(1):hover a{
+    position:absolute;
+    top: 5px;
+    left: 0;
+    width: 260px;
+    height: 89px;
+    line-height: 90px;
+    background: #5ee7df;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 22;
+}
+
